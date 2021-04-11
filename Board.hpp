@@ -1,38 +1,4 @@
 
-// #include "Direction.hpp"
-// #include <map>
-// #include <string>
-// #define SIZE 10
-
-// using namespace std;
-
-// namespace ariel{
-//     class Board{
-//             map<pair<uint,uint>, char> board;
-//             uint rowMax; //max row
-//             uint colMax; // max col
-//             uint rowMin; //min row
-//             uint colMin; // min col
-//         public:
-//             Board(){
-//                 rowMax = SIZE;
-//                 colMax = SIZE;
-//                 rowMin = 0;
-//                 colMin = 0;
-//             }
-//             uint get_rowMax(){return rowMax;}
-//             uint get_colMax(){return colMax;}
-//             uint get_rowMin(){return rowMin;}
-//             uint get_colMin(){return colMin;}
-//             void post(u_int row, u_int col, Direction d, std::string str);
-//             string read(u_int row, u_int col, Direction d, u_int length);
-//             void show();
-//     };
-// }
-
-
-
-
 #include "Direction.hpp"
 #include <vector>
 #include <string>
