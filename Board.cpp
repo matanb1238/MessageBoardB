@@ -13,15 +13,13 @@ namespace ariel{
             if (row + str.length() > UINT_MAX - 1){
                 throw std::length_error("Length is too much");
             }for (uint i = 0; i < str.length(); i++){
-                this->board[{row+i,col}] = str.at(i);
-                // this->board.insert({{row,col+i},str.at(i)});
+                this->board[{row+i,col}] = str.at(i);  
             }
         }else{
             if (col + str.length() > UINT_MAX - 1){
                 throw length_error("Length is too much");
             }for (uint i = 0; i < str.length(); i++){
                 this->board[{row,col+i}] = str.at(i);
-                // this->board.insert({{row+i,col},str.at(i)});
             }
         }
     }
@@ -83,16 +81,5 @@ namespace ariel{
                 
             }
         }
-        // for (unsigned int i = 0; i < get_max_rows() + 1; i++){
-        //     for (unsigned int j = 0; j < get_max_cols() + 1; j++){
-        //         char c = this->board.at({i,j});
-        //         if (this->board.at({i,j}) == '\0'){
-        //             cout << "_";
-        //         }else{
-        //              cout << this->board.at({i,j});
-        //          }
-        //      }
-        //      cout << "\n";
-        //  }
      }
 }
